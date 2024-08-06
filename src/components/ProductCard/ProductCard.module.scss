@@ -1,0 +1,30 @@
+.ProductCard {
+  width: 100%;
+  height: 18rem;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 2rem;
+}
+.ProductCard a {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: black;
+  }
+}
+.ProductCard img {
+  height: 18rem;
+  width: auto;
+}

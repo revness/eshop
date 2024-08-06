@@ -1,0 +1,26 @@
+.NavBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  border: 2px solid red;
+}
+
+.Javid {
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.Cart {
+  position: absolute;
+  right: 0;
+  margin-right: 3px;
+}
+.Cart a {
+  text-decoration: none;
+  color: black;
+  margin-right: 3px;
+}

@@ -1,0 +1,28 @@
+.ProductPage {
+    width: 100vw;
+    height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ProductPage img {
+    height: 500px;
+    width: 500px;
+}
+
+.detailsPanel {
+display: flex;
+flex-direction: column;
+justify-content: center;
+min-width: 500px;   
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.imagePanel {
+display: flex;
+flex-direction: column;
+justify-content: center;
+min-width: 500px;   
+}
+

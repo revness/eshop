@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Geometric Vase",
+      "quantity": 25,
+      "variants": ["Red", "Blue", "Green"],
+      "price_per_unit": 19.99,
+      "image_url": "[image_url_1]",
+      "favourited": true
+    },
+    {
+      "name": "Abstract Sculpture",
+      "quantity": 10,
+      "variants": ["Small", "Medium", "Large"],
+      "price_per_unit": 29.99,
+      "image_url": "[image_url_2]",
+      "favourited": false
+    },
+    {
+      "name": "Functional Gear Set",
+      "quantity": 15,
+      "variants": ["Silver", "Gold", "Bronze"],
+      "price_per_unit": 39.99,
+      "image_url": "[image_url_3]",
+      "favourited": true
+    },
+    {
+      "name": "Artistic Figurine",
+      "quantity": 8,
+      "variants": ["White", "Black"],
+      "price_per_unit": 24.99,
+      "image_url": "[image_url_4]",
+      "favourited": false
+    },
+    {
+      "name": "Architectural Model",
+      "quantity": 12,
+      "variants": ["1:50", "1:100", "1:200"],
+      "price_per_unit": 49.99,
+      "image_url": "[image_url_5]",
+      "favourited": true
+    },
+    {
+      "name": "Organic Sculpture",
+      "quantity": 6,
+      "variants": ["Green", "Brown"],
+      "price_per_unit": 34.99,
+      "image_url": "[image_url_6]",
+      "favourited": false
+    },
+    {
+      "name": "Customizable Jewelry",
+      "quantity": 20,
+      "variants": ["Plastic", "Metal"],
+      "price_per_unit": 14.99,
+      "image_url": "[image_url_7]",
+      "favourited": true
+    },
+    {
+      "name": "Mechanical Puzzle",
+      "quantity": 18,
+      "variants": ["Easy", "Medium", "Hard"],
+      "price_per_unit": 19.99,
+      "image_url": "[image_url_8]",
+      "favourited": false
+    },
+    {
+      "name": "Futuristic Lampshade",
+      "quantity": 7,
+      "variants": ["Blue", "Purple", "Orange"],
+      "price_per_unit": 54.99,
+      "image_url": "[image_url_9]",
+      "favourited": true
+    },
+    {
+      "name": "Decorative Wall Art",
+      "quantity": 30,
+      "variants": ["Floral", "Geometric"],
+      "price_per_unit": 39.99,
+      "image_url": "[image_url_10]",
+      "favourited": false
+    }
+  ]
+  

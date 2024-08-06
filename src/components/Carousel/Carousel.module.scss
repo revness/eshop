@@ -1,0 +1,25 @@
+
+.leftButton {
+    border: 2px solid red;
+    position: absolute;
+    left:0;
+}
+.rightButton{
+    border:2px solid blue;
+    position: absolute; 
+    right:0;
+}
+
+.carouselWrapper{
+    border: 2px solid green;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
