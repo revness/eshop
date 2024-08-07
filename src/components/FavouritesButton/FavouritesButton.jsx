@@ -1,5 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { FavouritesContext } from "../../context/FavouritesContext";
+import { Heart } from "@phosphor-icons/react";
+import styles from "./FavouritesButton.module.scss";
 
 const FavouritesButton = ({ id }) => {
   const { favorites, toggleFavorite } = useContext(FavouritesContext);
@@ -11,8 +13,13 @@ const FavouritesButton = ({ id }) => {
   };
 
   return (
-    <button onClick={handleClick}>
-      Favourited <span>{isFavorite ? "[x]" : "[ ]"}</span>
+    <button className={styles.FavouritesButton} onClick={handleClick}>
+      <Heart
+        size={32}
+        weight={isFavorite ? "fill" : "regular"}
+        color={isFavorite ? "red" : "black"}
+      />
+      {/* <span>{isFavorite ? "[x]" : "[ ]"}</span> */}
     </button>
   );
 };

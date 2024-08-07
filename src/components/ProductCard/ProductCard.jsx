@@ -7,13 +7,19 @@ const ProductCard = ({ data }) => {
   return (
     <div className={styles.ProductCard}>
       <Link to={`/products/${data.title.split(" ").join("-")}/${data.id}`}>
-        <img src={data.images[0]} />
+        <div className={styles.ProductImage}>
+          <img src={data.images[0]} />
+        </div>
 
         {/* <div>{data.id}</div> */}
-        <div>{data.title}</div>
-        <div>${data.price}</div>
+        <div className={styles.ProductText}>
+          <div>{data.title}</div>
+          <div>${data.price}</div>
+        </div>
       </Link>
-      <FavouritesButton id={data.id} />
+      <div className={styles.favButton}>
+        <FavouritesButton id={data.id} />
+      </div>
     </div>
   );
 };

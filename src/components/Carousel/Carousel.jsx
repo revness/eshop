@@ -1,6 +1,7 @@
 import styles from "./Carousel.module.scss";
 import { useState } from "react";
 import ProductCard from "../ProductCard/ProductCard";
+import { CaretCircleLeft, CaretCircleRight } from "@phosphor-icons/react";
 
 const Carousel = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -26,32 +27,38 @@ const Carousel = ({ data }) => {
 
   return (
     <div className={styles.carouselWrapper}>
-      <div className={styles.leftButton} onClick={handleLeftClick}>
-        left button
-      </div>
+      <button className={styles.leftButton} onClick={handleLeftClick}>
+        <CaretCircleLeft size={32} />
+      </button>
       <div className={styles.carousel}>
-        {data && (
-          <ProductCard
-            key={divContent[currentLeftIndex]?.id}
-            data={divContent[currentLeftIndex]}
-          ></ProductCard>
-        )}
-        {data && (
-          <ProductCard
-            key={divContent[currentIndex]?.id}
-            data={divContent[currentIndex]}
-          ></ProductCard>
-        )}
-        {data && (
-          <ProductCard
-            key={divContent[currentRightIndex]?.id}
-            data={divContent[currentRightIndex]}
-          ></ProductCard>
-        )}
+        <div className={styles.cardStyles}>
+          {data && (
+            <ProductCard
+              key={divContent[currentLeftIndex]?.id}
+              data={divContent[currentLeftIndex]}
+            ></ProductCard>
+          )}
+        </div>
+        <div className={styles.cardStyles}>
+          {data && (
+            <ProductCard
+              key={divContent[currentIndex]?.id}
+              data={divContent[currentIndex]}
+            ></ProductCard>
+          )}
+        </div>
+        <div className={styles.cardStyles}>
+          {data && (
+            <ProductCard
+              key={divContent[currentRightIndex]?.id}
+              data={divContent[currentRightIndex]}
+            ></ProductCard>
+          )}
+        </div>
       </div>
-      <div className={styles.rightButton} onClick={handleRightClick}>
-        right button
-      </div>
+      <button className={styles.rightButton} onClick={handleRightClick}>
+        <CaretCircleRight size={32} />
+      </button>
     </div>
   );
 };

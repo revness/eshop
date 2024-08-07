@@ -10,6 +10,7 @@ import FavouritesContextProvider, {
 } from "./context/FavouritesContext";
 import Cart from "./components/Cart/Cart";
 import CartContextProvider from "./context/CartContextProvider";
+import FavouritesPage from "./pages/FavouritesPage/FavouritesPage";
 
 function App() {
   // addCollectionData()
@@ -18,18 +19,21 @@ function App() {
       <ApiContextProvider>
         <BrowserRouter>
           <NavBar></NavBar>
-          <CartContextProvider>
-            <FavouritesContextProvider>
-              <Routes>
-                <Route path="/" element={<LandingPage />}></Route>
-                <Route
-                  path="/products/:product/:id"
-                  element={<ProductPage />}
-                />
-                <Route path="/cart" element={<Cart />} />
-              </Routes>
-            </FavouritesContextProvider>
-          </CartContextProvider>
+          <div className="content">
+            <CartContextProvider>
+              <FavouritesContextProvider>
+                <Routes>
+                  <Route path="/" element={<LandingPage />}></Route>
+                  <Route
+                    path="/products/:product/:id"
+                    element={<ProductPage />}
+                  />
+                  <Route path="/cart" element={<Cart />} />
+                  <Route path="/favourites" element={<FavouritesPage />} />
+                </Routes>
+              </FavouritesContextProvider>
+            </CartContextProvider>
+          </div>
         </BrowserRouter>
       </ApiContextProvider>
     </>

@@ -1,0 +1,7 @@
+* {
+    font-family: "Public Sans", sans-serif;
+}
+
+.content {
+    padding-top: 3rem; /* Same height as the navbar */
+  }
