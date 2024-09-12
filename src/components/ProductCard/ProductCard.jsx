@@ -11,7 +11,6 @@ const ProductCard = ({ data }) => {
           <img src={data.images[0]} />
         </div>
 
-        {/* <div>{data.id}</div> */}
         <div className={styles.ProductText}>
           <div>{data.title}</div>
           <div>${data.price}</div>

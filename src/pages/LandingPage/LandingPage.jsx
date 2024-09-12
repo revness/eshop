@@ -10,13 +10,12 @@ const LandingPage = () => {
   if (!data) {
     return <div>Loading...</div>;
   }
-  console.log(data);
   return (
     <main className={styles.LandingPage}>
       <Carousel data={data} />
       <div className={styles.ProductDiv}>
         {data.map((el) => {
-          return <ProductCard key={el.id} data={el}></ProductCard>;
+          return <ProductCard key={el.id} data={el} />;
         })}{" "}
       </div>
     </main>

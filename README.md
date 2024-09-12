@@ -1,8 +1,8 @@
-# React + Vite
+# Ecom shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Written in ReactJS and Google firebase for product storage. Styled with scss.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Changelog
+- adds github workflow 10/9/24
+- adds cart link to firebase 3/9/24
+- fixes bug where adding item to cart replaces entire cart with item instead of adding 12/9/24

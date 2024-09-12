@@ -1,14 +1,16 @@
-import { useState, useEffect, useContext } from "react";
-import { CartContext } from "../../context/CartContextProvider";
+import { addToCart } from "../../services/ecom-service";
+import styles from "./CartButton.module.scss";
 
 const CartButton = ({ id }) => {
-  const { cart, editCart } = useContext(CartContext);
-
   const handleClick = () => {
-    editCart(id);
+    addToCart(id);
   };
 
-  return <button onClick={handleClick}>Add to cart</button>;
+  return (
+    <button onClick={handleClick} className={styles.CartButton}>
+      Add to cart
+    </button>
+  );
 };
 
 export default CartButton;

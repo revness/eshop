@@ -1,5 +1,6 @@
 .leftButton {
   position: absolute;
+  z-index: 1;
   left: 20px;
   top: 50%;
   padding: 0;
@@ -8,6 +9,8 @@
 }
 .rightButton {
   position: absolute;
+  z-index: 1;
+
   right: 20px;
   top: 50%;
   padding: 0;
