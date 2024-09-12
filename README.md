@@ -1,6 +1,11 @@
+![](/docs/eshop.png)
+
 # Ecom shop
 
 Written in ReactJS and Google firebase for product storage. Styled with scss.
+
+<a href="https://revness.github.io/eshop/">Live Link</a>
+
 
 # Changelog
 - adds github workflow 10/9/24
